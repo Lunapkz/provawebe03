@@ -1,3 +1,6 @@
+create database loja;
+
+use loja;
 
 
 create table cliente(
@@ -5,3 +8,5 @@ create table cliente(
     NOME VARCHAR(50) NOT NULL,
     CNPJ CHAR(15) NOT NULL);
     
+
+
