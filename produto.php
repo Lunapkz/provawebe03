@@ -13,7 +13,7 @@
     $QUANT_ESTOQUE = $_GET["quant"];
 
     include_once("conexaobd.php");
-    $sql ="INSERT INTO PRODUTO(NOME,PRECO_UNITARIO,QUANT_ESTOQUE) VALUES($NR_PRODUTO,$PRECO_UNITARIO,$QUANT_ESTOQUE);";
+    $sql ="INSERT INTO PRODUTO(NOME,PRECO_UNITARIO,QUANT_ESTOQUE) VALUES('$NR_PRODUTO','$PRECO_UNITARIO','$QUANT_ESTOQUE');";
 
     mysqli_query($connection,$sql) or die ("Erro ao cadastrar cliente");
 
